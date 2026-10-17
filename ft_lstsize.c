@@ -1,44 +1,34 @@
-#include <stdio.h>
-#include <stdlib.h>
-typedef struct s_list
-{
-    void *content;
-    struct s_list *next;
-    
-}t_list;
-void ft_lstadd_front(t_list **lst, t_list *new)
-{
-     new -> next = *lst;
-     *lst = new;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ratieh <raghadatiea2003@gmail.com>         #+#  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026-10-15 15:48:39 by ratieh            #+#    #+#             */
+/*   Updated: 2026-10-15 15:48:39 by ratieh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-}
-t_list *ft_lstnew(void *content)
+/*#include <stdio.h>
+#include <stdlib.h>*/
+unsigned int	ft_lstsize(t_list *lst)
 {
-    t_list *new_node;
+	unsigned int		count;
 
-    new_node = (t_list *)malloc(sizeof(t_list));
-    if(!new_node)
-        return (NULL);
-    new_node -> content = content;
-    new_node -> next = NULL;
-    return (new_node);
+	count = 0;
+	while (lst)
+	{
+		count++;
+		lst = lst -> next;
+	}
+	return (count);
 }
-unsigned int ft_lstsize(t_list *lst)
-{
-    unsigned int count;
 
-    count = 0;
-    while(lst)
-    {
-        count++;
-        lst = lst -> next;
-    }
-    return (count);
-}
-int main()
+/*int main()
 {
     t_list *lst;
     lst = ft_lstnew("9");
     ft_lstadd_front(&lst, ft_lstnew("4"));
     printf("%u",(ft_lstsize(lst)));
-}
+}*/

@@ -1,7 +1,19 @@
-void ft_lstdelone(t_list *lst, void (*del)(void*))
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ratieh <raghadatiea2003@gmail.com>         #+#  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026-10-15 15:35:00 by ratieh            #+#    #+#             */
+/*   Updated: 2026-10-15 15:35:00 by ratieh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-    if (!lst)
-        return;
-    del(lst -> content);
-    free(lst);
+	if (!lst)
+		return ;
+	del(lst->content);
+	free(lst);
 }

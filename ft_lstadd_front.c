@@ -1,29 +1,26 @@
-#include <stdlib.h>
-#include <stdio.h>
-typedef struct s_list
-{
-    void *content;
-    struct s_list *next;
-    
-}t_list;
-t_list *ft_lstnew(void *content)
-{
-    t_list *new_node;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstadd_front.C                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ratieh <raghadatiea2003@gmail.com>         #+#  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026-10-15 19:22:45 by ratieh            #+#    #+#             */
+/*   Updated: 2026-10-15 19:22:45 by ratieh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    new_node = (t_list *)malloc(sizeof(t_list));
-    if(!new_node)
-        return (NULL);
-    new_node -> content = content;
-    new_node -> next = NULL;
-    return (new_node);
+/*#include <stdlib.h>
+#include <stdio.h>*/
+
+void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
- t_list *node;
-    t_list *lst;
-
-    lst = ft_lstnew("9");
-    ft_lstadd_front(&lst, ft_lstnew("4"));
-
-int main()
+/*int main()
 {
     t_list *node;
     t_list *lst;
@@ -42,4 +39,4 @@ int main()
         lst = lst ->next;
         free(node);
     }
-}
+}*/

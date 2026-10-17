@@ -1,33 +1,45 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ratieh <raghadatiea2003@gmail.com>         #+#  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026-10-15 19:02:11 by ratieh            #+#    #+#             */
+/*   Updated: 2026-10-15 19:02:11 by ratieh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-char to_upper(unsigned int index, char c)
+/*#include <string.h>
+#include <stdio.h>*/
+/*char to_upper(unsigned int index, char c)
 {
     (void)index;
     if (c >= 'a' && c <= 'z')
         return (c - 32);
     return (c);
-}
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+}*/
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-    char *new_str;
-    size_t i;
+	char	*new_str;
+	size_t	i;
 
-    i = 0;
-    if (!s || !f)
-        return (NULL);
-    new_str = (char *)malloc(sizeof(char) * (strlen(s) + 1));
-    if (!new_str)
-        return (NULL);
-    while (s[i])
-    {
-        new_str[i] = f(i, s[i]);
-        i++;
-    }
-    new_str[i] = '\0';
-    return (new_str);
+	i = 0;
+	if (!s || !f)
+		return (NULL);
+	new_str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
+	if (!new_str)
+		return (NULL);
+	while (s[i])
+	{
+		new_str[i] = f(i, s[i]);
+		i++;
+	}
+	new_str[i] = '\0';
+	return (new_str);
 }
-int main()
+/*int main()
 {
     char *s = "hello";
     char *result = ft_strmapi(s, to_upper);
@@ -39,4 +51,4 @@ int main()
         free(result);
     }
     return 0;
-}
+}*/
