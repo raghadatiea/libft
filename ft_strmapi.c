@@ -10,9 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#
 /*#include <string.h>
 #include <stdio.h>*/
+#include "libft.h"
 /*char to_upper(unsigned int index, char c)
 {
     (void)index;

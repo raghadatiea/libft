@@ -13,6 +13,7 @@
 /*#include<string.h>
 #include<stdio.h>*/
 #include <stdlib.h> 
+#include "libft.h"
 
 size_t	count_digits(long num)
 {

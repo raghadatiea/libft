@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
+#include "libft.h"
 /*#include <string.h>
 #include <stdio.h>*/
 size_t	get_start(char const *s1, char const *set)
