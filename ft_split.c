@@ -10,9 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <string.h>
-#include <stdio.h>*/
-#include <stdlib.h>
 #include "libft.h"
 
 size_t	count_words(char const *s, char c)
@@ -43,8 +40,7 @@ size_t	copy_word(char **p, char const *start, size_t word_len, size_t j)
 	p[j] = malloc(word_len + 1);
 	if (p[j] == NULL)
 		return (0);
-	ft_strncpy(p[j], start, word_len);
-	p[j][word_len] = '\0';
+	ft_strlcpy(p[j], start, word_len + 1);
 	return (1);
 }
 

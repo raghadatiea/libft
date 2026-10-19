@@ -10,20 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-//#include <stdio.h>
+
 char	*ft_strchr(const char *s, int c)
 {
-	if (c == '\0')
+	unsigned char ch;
+
+	ch = (unsigned char)c;
+	if (ch == '\0')
 	{
 		s += ft_strlen(s);
 		return ((char *)s);
 	}
 	while (*s)
 	{
-		if (*s == c)
+		if ((unsigned char)*s == ch)
 			return ((char *)s);
 		s++;
 	}
+	if (*s == ch)
+		return ((char *)s);
 	return (NULL);
 }
 /*int main()

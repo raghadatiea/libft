@@ -16,22 +16,23 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*p;
+	char		*p;
+	unsigned char a;
 
-	if (c == '\0')
+	p = NULL;
+	a = (unsigned char)c;
+	if (a == '\0')
 	{
 		s += ft_strlen(s);
 		return ((char *)s);
 	}
 	while (*s)
 	{
-		if (*s == c)
+		if ((unsigned char)*s == a)
 			p = ((char *)s);
 		s++;
 	}
-	if (*p == c)
 		return (p);
-	return (NULL);
 }
 /*int main()
 {

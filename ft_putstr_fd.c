@@ -9,11 +9,10 @@
 /*   Updated: 2026-10-15 16:08:22 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (s)
-		write(fd, s, strlen(s));
+		write(fd, s, ft_strlen(s));
 }

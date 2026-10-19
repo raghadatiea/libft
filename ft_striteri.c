@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdlib.h>
-#include <stdio.h>*/
 #include "libft.h"
 /*void	f(unsigned int index, char *c)
 {

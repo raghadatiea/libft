@@ -9,8 +9,6 @@
 /*   Updated: 2026/10/04 13:49:30 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 #include "libft.h"
 
 size_t	ft_strcpy(char *dest, const char *src, size_t location)

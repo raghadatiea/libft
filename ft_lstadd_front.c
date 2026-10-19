@@ -9,9 +9,6 @@
 /*   Updated: 2026-10-15 19:22:45 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*#include <stdlib.h>
-#include <stdio.h>*/
 #include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
