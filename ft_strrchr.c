@@ -6,7 +6,7 @@
 /*   By: ratieh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 14:11:50 by ratieh            #+#    #+#             */
-/*   Updated: 2026/09/29 14:51:17 by ratieh           ###   ########.fr       */
+/*   Updated: 2026/10/21 14:42:52 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*#define _DEFAULT_SOURCE
@@ -16,8 +16,8 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char		*p;
-	unsigned char a;
+	char			*p;
+	unsigned char	a;
 
 	p = NULL;
 	a = (unsigned char)c;
@@ -32,7 +32,7 @@ char	*ft_strrchr(const char *s, int c)
 			p = ((char *)s);
 		s++;
 	}
-		return (p);
+	return (p);
 }
 /*int main()
 {

@@ -8,7 +8,7 @@
 /*   Created: 2026-10-15 15:02:37 by ratieh            #+#    #+#             */
 /*   Updated: 2026-10-15 15:02:37 by ratieh           ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */ 
+/* ************************************************************************** */
 #include "libft.h"
 
 size_t	count_digits(long num)
@@ -28,14 +28,14 @@ size_t	count_digits(long num)
 
 char	*ft_itoa(int n)
 {
-	size_t		num_of_digits;
-	char		*str;
-	long		num;
+	size_t	num_of_digits;
+	char	*str;
+	long	num;
 
 	num = n;
 	num_of_digits = count_digits(num);
 	str = malloc(num_of_digits + 1);
-	if(!str)
+	if (!str)
 		return (NULL);
 	str[num_of_digits] = '\0';
 	if (num < 0)
@@ -61,5 +61,5 @@ char	*ft_itoa(int n)
 		printf("%s\n", str);
 		free(str);
 	}
-	return 0;
+	return (0);
 }*/

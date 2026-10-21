@@ -13,7 +13,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned char ch;
+	unsigned char	ch;
 
 	ch = (unsigned char)c;
 	if (ch == '\0')
