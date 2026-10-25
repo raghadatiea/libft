@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-size_t	get_start(char const *s1, char const *set)
+static size_t	get_start(char const *s1, char const *set)
 {
 	size_t	start;
 
@@ -21,7 +21,7 @@ size_t	get_start(char const *s1, char const *set)
 	return (start);
 }
 
-size_t	get_end(char const *s1, char const *set)
+static size_t	get_end(char const *s1, char const *set)
 {
 	size_t	end;
 

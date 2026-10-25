@@ -34,3 +34,30 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_lst);
 }
+/*void *add_x (void *content)
+{
+	return (ft_strjoin((char *)content, "x"));
+}
+
+void del(void *content)
+{
+	free((char *)content);
+}
+#include <stdio.h>
+int main()
+{
+	t_list *newlst;
+	t_list *a = ft_lstnew("hello");
+	t_list *b = ft_lstnew("world");
+
+	a -> next = b;
+	printf("%s\n" , (char *)a -> content);
+	printf("%s\n" , (char *)a -> next ->content);
+
+	newlst = ft_lstmap(a, add_x,del);
+	while (newlst)
+	{
+		printf("%s" , (char *)newlst-> content);
+		newlst = newlst ->next;
+	}	
+}*/

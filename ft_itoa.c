@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-size_t	count_digits(long num)
+static size_t	count_digits(long num)
 {
 	size_t	count;
 

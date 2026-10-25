@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-size_t	ft_strcpy(char *dest, const char *src, size_t location)
+static size_t	ft_strcpy(char *dest, const char *src, size_t location)
 {
 	size_t	i;
 

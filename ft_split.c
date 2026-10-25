@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-size_t	count_words(char const *s, char c)
+static size_t	count_words(char const *s, char c)
 {
 	size_t	i;
 	size_t	count;
@@ -35,7 +35,7 @@ size_t	count_words(char const *s, char c)
 	return (count);
 }
 
-size_t	copy_word(char **p, char const *start, size_t word_len, size_t j)
+static size_t	copy_word(char **p, char const *start, size_t word_len, size_t j)
 {
 	p[j] = malloc(word_len + 1);
 	if (p[j] == NULL)
@@ -44,7 +44,7 @@ size_t	copy_word(char **p, char const *start, size_t word_len, size_t j)
 	return (1);
 }
 
-char	**free_all(char **p, size_t j)
+static char	**free_all(char **p, size_t j)
 {
 	while (j > 0)
 	{
@@ -55,7 +55,7 @@ char	**free_all(char **p, size_t j)
 	return (NULL);
 }
 
-char	**cpy_fill(char **p, char const *s, char c)
+static char	**cpy_fill(char **p, char const *s, char c)
 {
 	size_t	start;
 	size_t	i;
