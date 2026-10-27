@@ -3,18 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratieh <raghadatiea2003@gmail.com>         #+#  +:+       +#+        */
+/*   By: ratieh <marvin@42.fr>                      #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-15 15:36:42 by ratieh            #+#    #+#             */
-/*   Updated: 2026-10-15 15:36:42 by ratieh           ###   ########.fr       */
+/*   Created: 2026-10-27 17:55:44 by ratieh            #+#    #+#             */
+/*   Updated: 2026-10-27 17:55:44 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (!f)
+	if (!f || !lst)
 		return ;
 	while (lst)
 	{

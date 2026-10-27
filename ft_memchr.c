@@ -3,19 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratieh <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: ratieh <marvin@42.fr>                      #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/30 15:06:00 by ratieh            #+#    #+#             */
-/*   Updated: 2026/09/30 16:47:13 by ratieh           ###   ########.fr       */
+/*   Created: 2026-10-27 17:56:22 by ratieh            #+#    #+#             */
+/*   Updated: 2026-10-27 17:56:22 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	*p;
+	const unsigned char	*p;
 
+	if (!s)
+		return (NULL);
 	p = (unsigned char *)s;
 	while (n > 0)
 	{
@@ -28,9 +29,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*int main()
+/*#include <stdio.h>
+int main()
 {
 	char *src ="hello";
-	char *p =(char *)ft_memchr(src,'l', 5);
+	char *p =(char *)ft_memchr(NULL,'l', 5);
+	if (!p)
+		return (1);
 	printf("%c", *(p));
 }*/

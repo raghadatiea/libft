@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratieh <raghadatiea2003@gmail.com>         #+#  +:+       +#+        */
+/*   By: ratieh <marvin@42.fr>                      #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-15 15:02:37 by ratieh            #+#    #+#             */
-/*   Updated: 2026-10-15 15:02:37 by ratieh           ###   ########.fr       */
+/*   Created: 2026-10-27 17:55:04 by ratieh            #+#    #+#             */
+/*   Updated: 2026-10-27 17:55:04 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static size_t	count_digits(long num)

@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratieh <raghadatiea2003@gmail.com>         #+#  +:+       +#+        */
+/*   By: ratieh <marvin@42.fr>                      #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-15 19:02:11 by ratieh            #+#    #+#             */
-/*   Updated: 2026-10-15 19:02:11 by ratieh           ###   ########.fr       */
+/*   Created: 2026-10-27 17:58:10 by ratieh            #+#    #+#             */
+/*   Updated: 2026-10-27 17:58:10 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#
 /*#include <string.h>
 #include <stdio.h>*/
 #include "libft.h"
@@ -24,7 +22,7 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*new_str;
-	size_t	i;
+	unsigned int	i;
 
 	i = 0;
 	if (!s || !f)

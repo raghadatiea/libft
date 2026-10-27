@@ -26,8 +26,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	while (big[i] != '\0' && i < len)
 	{
 		j = 0;
-		while ((big[i + j] == little[j]) && (little[j] != '\0') && (i
-				+ j) < len)
+		while (((i + j) < len && big[i + j] == little[j]) && (little[j] != '\0'))
 		{
 			j++;
 		}
@@ -39,10 +38,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-/*int main()
+/*#include <stdio.h>
+int main()
 {
 
 		char    *big = "hello";
 		char *little = "llo";
-		printf("%s",ft_strnstr(big ,little, 6));
+		printf("%s",ft_strnstr(NULL ,NULL, 6));
 }*/

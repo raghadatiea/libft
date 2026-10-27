@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratieh <raghadatiea2003@gmail.com>         #+#  +:+       +#+        */
+/*   By: ratieh <marvin@42.fr>                      #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-15 16:10:48 by ratieh            #+#    #+#             */
-/*   Updated: 2026-10-15 16:10:48 by ratieh           ###   ########.fr       */
+/*   Created: 2026-10-27 17:57:32 by ratieh            #+#    #+#             */
+/*   Updated: 2026-10-27 17:57:32 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 static size_t	count_words(char const *s, char c)

@@ -16,6 +16,8 @@ char	*ft_strchr(const char *s, int c)
 	unsigned char	ch;
 
 	ch = (unsigned char)c;
+	if (!s)
+		return (NULL);
 	if (ch == '\0')
 	{
 		s += ft_strlen(s);

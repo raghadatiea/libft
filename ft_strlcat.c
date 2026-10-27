@@ -19,6 +19,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	i = 0;
 	src_len = ft_strlen(src);
+	if (size == 0)
+		return (src_len);
 	dest_len = ft_strlen(dst);
 	if (size <= dest_len)
 	{
@@ -32,10 +34,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[i + dest_len] = '\0';
 	return (dest_len + src_len);
 }
-/*int main()
+/*#include <stdio.h>
+int main()
 {
 	char *src ="hello";
-	char dest[7] = " world";
-	ft_strlcat(dest,src,7);
+	char dest[7] = "world";
+	ft_strlcat(	NULL,NULL,10);
 	printf("%s", dest);
 }*/
