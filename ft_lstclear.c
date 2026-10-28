@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratieh <marvin@42.fr>                      #+#  +:+       +#+        */
+/*   By: ratieh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-27 17:55:32 by ratieh            #+#    #+#             */
-/*   Updated: 2026-10-27 17:55:32 by ratieh           ###   ########.fr       */
+/*   Created: 2026/10/28 15:04:33 by ratieh            #+#    #+#             */
+/*   Updated: 2026/10/28 15:04:41 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))

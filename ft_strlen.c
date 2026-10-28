@@ -5,11 +5,10 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ratieh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/24 10:18:22 by ratieh            #+#    #+#             */
-/*   Updated: 2026/09/24 10:36:49 by ratieh           ###   ########.fr       */
+/*   Created: 2026/10/28 15:19:55 by ratieh            #+#    #+#             */
+/*   Updated: 2026/10/28 15:20:00 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 //#include <stdio.h>
 size_t	ft_strlen(const char *s)

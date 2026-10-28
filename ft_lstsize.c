@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratieh <marvin@42.fr>                      #+#  +:+       +#+        */
+/*   By: ratieh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-27 17:56:13 by ratieh            #+#    #+#             */
-/*   Updated: 2026-10-27 17:56:13 by ratieh           ###   ########.fr       */
+/*   Created: 2026/10/28 15:10:00 by ratieh            #+#    #+#             */
+/*   Updated: 2026/10/28 15:10:05 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 unsigned int	ft_lstsize(t_list *lst)

@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratieh <marvin@42.fr>                      #+#  +:+       +#+        */
+/*   By: ratieh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-27 17:55:56 by ratieh            #+#    #+#             */
-/*   Updated: 2026-10-27 17:55:56 by ratieh           ###   ########.fr       */
+/*   Created: 2026/10/28 15:27:13 by ratieh            #+#    #+#             */
+/*   Updated: 2026/10/28 15:27:22 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))

@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ratieh <marvin@42.fr>                      #+#  +:+       +#+        */
+/*   By: ratieh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-27 17:58:26 by ratieh            #+#    #+#             */
-/*   Updated: 2026-10-27 17:58:26 by ratieh           ###   ########.fr       */
+/*   Created: 2026/10/28 15:22:57 by ratieh            #+#    #+#             */
+/*   Updated: 2026/10/28 15:23:03 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 static size_t	get_start(char const *s1, char const *set)

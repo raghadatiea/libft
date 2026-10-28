@@ -51,7 +51,7 @@ $(NAME):$(OFILES)
 %.o:%.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 clean : 
-	rm -f *.o
+	rm -f $(OFILES)
 fclean : clean
 	rm -f $(NAME)
 re : fclean all

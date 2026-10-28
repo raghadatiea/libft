@@ -5,11 +5,10 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ratieh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/29 17:14:16 by ratieh            #+#    #+#             */
-/*   Updated: 2026/09/29 18:05:16 by ratieh           ###   ########.fr       */
+/*   Created: 2026/10/28 15:21:59 by ratieh            #+#    #+#             */
+/*   Updated: 2026/10/28 16:07:50 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
@@ -23,10 +22,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	{
 		return ((char *)big);
 	}
-	while (big[i] != '\0' && i < len)
+	while (i < len && big[i] != '\0')
 	{
 		j = 0;
-		while (((i + j) < len && big[i + j] == little[j]) && (little[j] != '\0'))
+		while (((i + j) < len && (little[j] != '\0') && big[i + j] == little[j]))
 		{
 			j++;
 		}
@@ -44,5 +43,5 @@ int main()
 
 		char    *big = "hello";
 		char *little = "llo";
-		printf("%s",ft_strnstr(NULL ,NULL, 6));
+		printf("%s",ft_strnstr(big ,little, 6));
 }*/

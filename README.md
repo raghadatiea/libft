@@ -102,6 +102,7 @@ The library contains reimplementations of standard C functions and additional ut
 - `ft_strmapi`: applies a function to each character of a string.
 - `ft_striteri`: applies a function to each character using its index.
 - `ft_itoa`: converts an integer into a string.
+- `ft_atoi`: converts a string into an integer.
 
 ## 3. Memory Functions
 

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ratieh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/28 14:08:24 by ratieh            #+#    #+#             */
-/*   Updated: 2026/09/29 17:35:49 by ratieh           ###   ########.fr       */
+/*   Created: 2026/10/28 15:19:09 by ratieh            #+#    #+#             */
+/*   Updated: 2026/10/28 15:46:20 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -19,9 +19,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	i = 0;
 	src_len = ft_strlen(src);
-	if (size == 0)
-		return (src_len);
-	dest_len = ft_strlen(dst);
+	dest_len = 0;
+	while (dest_len < size && dst[dest_len])
+	{
+		dest_len++;
+	}
 	if (size <= dest_len)
 	{
 		return (size + src_len);
@@ -38,7 +40,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 int main()
 {
 	char *src ="hello";
-	char dest[7] = "world";
-	ft_strlcat(	NULL,NULL,10);
-	printf("%s", dest);
+	char dest[20] = "world";
+	size_t *s = ft_strlcat(dest, src, sizeof(dest));
+	printf("%s",dest);
+
 }*/

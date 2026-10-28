@@ -5,11 +5,10 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ratieh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/30 13:14:15 by ratieh            #+#    #+#             */
-/*   Updated: 2026/09/30 15:02:20 by ratieh           ###   ########.fr       */
+/*   Created: 2026/10/28 15:12:49 by ratieh            #+#    #+#             */
+/*   Updated: 2026/10/28 15:12:53 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
