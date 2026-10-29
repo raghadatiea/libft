@@ -6,14 +6,20 @@
 /*   By: ratieh <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 15:20:55 by ratieh            #+#    #+#             */
-/*   Updated: 2026/10/28 15:21:11 by ratieh           ###   ########.fr       */
+/*   Updated: 2026/10/29 11:49:33 by ratieh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*#include <string.h>
 #include <stdio.h>*/
 #include "libft.h"
+
 /*char to_upper(unsigned int index, char c)
 {
+	char			*new_str;
+	unsigned int	i;
+	unsigned int	i;
+	char			*new_str;
+
     (void)index;
     if (c >= 'a' && c <= 'z')
         return (c - 32);
@@ -21,7 +27,7 @@
 }*/
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*new_str;
+	char			*new_str;
 	unsigned int	i;
 
 	i = 0;
@@ -49,5 +55,5 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
         printf("%s\n", result);
         free(result);
     }
-    return 0;
+    return (0);
 }*/
